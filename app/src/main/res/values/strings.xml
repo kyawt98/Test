@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">pos</string>
+    <string name="firstname">firstname</string>
+    <string name="lastname">lastname</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="retype_password">retype-password</string>
+</resources>

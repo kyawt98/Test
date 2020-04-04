@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Now"
+        android:textSize="18sp"
+        android:textColor="#ECAC98"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:padding="@dimen/dimen_18"/>
+
+
+    <EditText
+        android:id="@+id/et_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/firstname"
+        android:layout_margin="@dimen/dimen_14"/>
+
+    <EditText
+        android:id="@+id/et_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lastname"
+        android:layout_margin="@dimen/dimen_14"/>
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/username"
+        android:layout_margin="@dimen/dimen_14"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_margin="@dimen/dimen_14"/>
+
+    <EditText
+        android:id="@+id/et_retypepassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/retype_password"
+        android:inputType="textPassword"
+        android:layout_margin="@dimen/dimen_14"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_14"
+        android:text="Register"
+        android:background="@drawable/register_background" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textSize="12sp"
+            android:textColor="#6E6B6B"
+            android:textAlignment="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/txtLogin"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:padding="@dimen/dimen_5"/>
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            app:layout_constraintBaseline_toBaselineOf="@id/txtQuestion"
+            android:padding="@dimen/dimen_5"
+            android:textStyle="bold|italic"
+            android:textColor="#556DF1"
+            app:layout_constraintLeft_toRightOf="@id/txtQuestion"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="#00FFFFFF"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
